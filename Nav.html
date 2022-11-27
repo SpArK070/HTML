@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-6 Assignment - 1</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+    .parent{
+        background-color:#202c3c;
+        width: 80%;
+        height: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        margin:auto;
+        border-radius: 5px;
+        margin-top: 50px;
+        
+    }
+    .childleft{
+        width: 50%;
+        height: 100%;
+        margin-top: 10px;
+        justify-content: left;
+        }
+
+    .childright{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    select{
+        border: none;
+        background-color: #202c3c;
+        color: white;
+        font-size: 18px;
+    }
+
+    </style>
+
+</head>
+<body>
+    <!--Full div-->
+    <div class="parent">
+        <!--Left div-->
+        <div class="childleft">
+            <h1>MEGAWIDTH</h1>
+        </div> 
+        
+        <!--Right div-->
+        <div class="childright">
+            <div>Home</div>
+            <div>About</div>
+            <div>Blog</div> 
+            <div>
+                <select>
+                    <option value="1">Page</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
