@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-8 Assignment-1</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .full{
+            width:80%;
+            margin:auto;
+            border: 2px solid transparent;
+        }
+        .head{
+            width:100%;
+            border:2px solid transparent;
+            height:200px;
+            margin-top:30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .head h1{
+            font-size:45px ;
+            color: rgb(0, 0, 95);
+        }
+        .head p{
+            font-size: 20px;
+            padding: 0px 600px;
+        
+        }
+        .content{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 100%;
+            grid-gap: 40px;
+            padding:20px;
+            width:80%;
+            margin: auto;
+        }
+        .content >div{
+            height: 100%;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgba(53, 53, 53, 0.2) 0px 8px 24px;
+            padding:20px;
+            text-align: center;
+        }
+        h4{
+            font-size: 40px;
+            margin-bottom: 0px;
+        
+        }
+        h5{
+            font-size: 25px;
+        }
+        
+
+        button{
+            border: 2px solid rgb(84, 84, 241);
+            padding:15px 80px;
+            color:#4193F2;
+            border-radius: 10px;
+            background-color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .period{
+        color: grey;
+        }
+        #details{
+            padding: 0px 35px;
+            font-size: 18px;
+        }
+       
+        #center{
+            background-color:rgb(84, 84, 241);
+            color:white;
+        }
+
+
+        @media only screen and (min-width:376px) and (max-width:768px) {
+            .content {
+                width:100%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2,1fr);                
+            }
+            .head p{
+                padding: 0px;
+        
+        }
+           
+        }
+        @media only screen and (min-width:0px) and (max-width:375px) {
+            
+            .content {
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: repeat(3,1fr);
+                margin-top:30px;
+            }
+            .head{
+                margin-bottom: 100px;
+            }
+            .head p{
+            font-size: 16px;
+            padding: 0px ;        
+            }
+            .head h1{
+            font-size:25px ;
+            color: rgb(0, 0, 95);
+        }
+                    
+        }
+        
+      </style>
+</head>
+
+<body>
+    <div class="all">
+        <div class="head">
+            <h1>Choose a plan that right for <br>your business</h1>
+            <p>We collect review from our users so you can get an honest opinion of what an experience with our website are really like! </p>
+        </div>
+        <div class="content">
+            <div class="one">
+                 <h5>Starter Plan</h5>
+                 <h4  style="color: green;">Free</h4>
+                 <p class="period"><i>per month</i></p><br>
+                 <p id="details">We collect review from our users so you can get an honest opinion of what an experience with our website.</p><br><br>
+                 <button>Start Now</button>
+                </div>
+            <div class="two">
+                 <h5>Business Plan</h5>
+                 <h4  style="color: orange; ">$39.00</h4>
+                 <p class="period"><i>per month</i></p><br>
+                 <p id="details">We collect review from our users so you can get an honest opinion of what an experience with our website.</p><br><br>
+                 <button id="center">Start Now</button>
+                </div>
+            <div class="three">
+                <h5>Starter Plan</h5>
+                 <h4  style="color: blue;">$59.00</h4>
+                 <p class="period"><i>per month</i></p><br>
+                 <p id="details">We collect review from our users so you can get an honest opinion of what an experience with our website.</p><br><br>
+                 <button>Start Now</button>
+            </div>
+        </div>
+      </div>    
+</body>
+</html>
